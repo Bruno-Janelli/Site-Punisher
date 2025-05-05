@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #00c83b;
+    background-color: #0a9c0a;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -20,9 +20,9 @@ header {
 }
 
 .logo h1 {
-    font-family: 'Impact', sans-serif;
-    color: #000;
-    text-shadow: 2px 2px #fff;
+    font-family: sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
 }
 
 .logo-img {
