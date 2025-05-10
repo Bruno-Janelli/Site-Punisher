@@ -89,3 +89,10 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    place-self: center;
+}
