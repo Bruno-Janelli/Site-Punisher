@@ -39,6 +39,37 @@
                 <p>Imagem do Produto</p> <img src="calça branca.jpeg" alt="Foto de Perfil" width="60"> <a class="back-button" href="produtocalças.html">Saiba mais</a></div>
         </div>
     </main>
+    
+    <script>
+        // Lista de músicas
+        const playlist = ["musica.mp3", "Bassline.mp3", "Action.mp3"]; // adicione os nomes dos seus arquivos aqui
+    
+        let currentIndex = 0;
+    
+        // Criar elemento de áudio
+        const audio = document.createElement("audio");
+        audio.src = playlist[currentIndex];
+        audio.autoplay = true;
+        audio.style.display = "none";
+        audio.volume = 0.5; // volume ajustado para 30%
+    
+        // Quando a música termina, avança para a próxima
+        audio.addEventListener("ended", () => {
+            currentIndex = (currentIndex + 1) % playlist.length; // loop contínuo
+            audio.src = playlist[currentIndex];
+            audio.play();
+        });
+    
+        // Tentar reproduzir automaticamente (pode precisar de interação do usuário)
+        audio.play().catch(() => {
+            document.addEventListener('click', () => {
+                audio.play();
+            }, { once: true });
+        });
+    
+        document.body.appendChild(audio);
+    </script>
+
 </body>
 
 </html>

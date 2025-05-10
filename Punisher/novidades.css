@@ -3,12 +3,19 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    background-image: url("tony-hawks.jpg");
+    background-image: url("Back-Flip.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+/*section video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}*/
 
 header {
     display: flex;
@@ -67,7 +74,6 @@ h1 {
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-    
 }
 
 .back-button {
@@ -88,4 +94,11 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    place-self: center;
 }
