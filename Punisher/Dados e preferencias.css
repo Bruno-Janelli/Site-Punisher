@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #0a9c0a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.logo h1 {
+    font-family: sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 60px;
+    background-color: #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.field-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.field {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.field input {
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.cancel {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.confirm {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form-box {
+    background-color: #e0e0e0;
+    border: 1px solid #999;
+    padding: 25px 30px;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
